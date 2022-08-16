@@ -1,0 +1,337 @@
+@media (min-width: 450px) and (max-width: 849.99px){
+
+    html{
+        font-size: 62.5%;
+    }
+
+    /* Cabecalho Oculto Início */
+
+    header#cabecalho #div-interna-cabecalho{
+        display: none;
+    }
+
+    header#cabecalho .cabecalho-oculto{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        backdrop-filter: blur(0px) saturate(71%);
+        -webkit-backdrop-filter: blur(0px) saturate(71%);
+        background-color: rgba(18, 18, 19, 0.73);
+        z-index: 10000;
+    }
+    
+    header#cabecalho .cabecalho-oculto #cabecalho-oculto-interno{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8rem;
+    }
+
+    header#cabecalho .cabecalho-oculto #cabecalho-oculto-interno img{
+        width: 18rem;
+        cursor: pointer;
+    }
+
+    header#cabecalho .cabecalho-oculto #cabecalho-oculto-interno #botao-menu-escondido{
+        width: 5rem;
+        height: 5rem;
+        border: 1px solid #fff;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .traco{
+        display: inline-block;
+        width: 3rem;
+        height: 0.4rem;
+        border-radius: 0.5rem;
+        background: #fff;
+    }
+
+    header#cabecalho .cabecalho-oculto #cabecalho-oculto-interno #botao-menu-escondido .traco1X{
+        transform: rotate(45deg) translateY(3px) translateX(2px);
+        transition: all 0.3s;
+    }
+
+    header#cabecalho .cabecalho-oculto #cabecalho-oculto-interno #botao-menu-escondido .traco2X{
+        transform: 20rem;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    header#cabecalho .cabecalho-oculto #cabecalho-oculto-interno #botao-menu-escondido .traco3X{
+        transform: rotate(-45deg) translateY(-0.4rem) translateX(0.3rem);
+        transition: all 0.3s;
+    }
+
+    .traco1{
+        transform: translateY(-0.6rem);
+    }
+
+    .traco3{
+        transform: translateY(0.6rem);
+    }
+
+    .navegacao-menu-oculto{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 2rem;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .cabecalho-oculto{
+        height: 8rem;
+        overflow-y: hidden;
+    }
+
+    header#cabecalho .menu-desocultado{
+        height: 25rem;
+        transition: all 0.4s ease-in-out;
+    }
+
+    header#cabecalho .cabecalho-oculto .navegacao-menu-oculto a{
+        margin-top: 1rem;
+        color: #fff;
+        font-size: 1.75rem;
+        display: inline-block;
+    }
+
+    header#cabecalho .cabecalho-oculto .navegacao-menu-oculto a:hover{
+        transform: scale(1.05);
+        color: cyan;
+    }
+
+
+    /* Cabecalho Oculto Fim */
+
+    section#container1 #conteudo-principal1 h1{
+        font-family: 'Bree Serif', serif;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+
+    section#container1 #conteudo-principal1 #botoes{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn{
+        font-size: 2rem;
+        padding: 1.5rem;
+        border-radius: 5rem;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+
+    section#container1{
+        width: 100%;
+        z-index: 0;
+    }
+
+    section#container1 #conteudo-principal1{
+        width: 80%;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .botao1{
+        background: #821dfd;
+        transition: all 0.3s;
+    }
+
+    .botao1:hover{
+        background: #6518c3;
+    }
+
+    .botao2{
+        background: none;
+        border: 2px solid #fff;
+        transition: all 0.3s;
+    }
+
+    .botao2:hover{
+        background: #fff;
+        color: black;
+    }
+
+    section#container2{
+        width: 100%;
+        background: #fff;
+        padding: 3rem 0 3rem 0;
+    }
+
+    section#container2 #conteudo-principal2{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#container2 #conteudo-principal2 #container2-album{
+        width: 60%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    section#container2 #conteudo-principal2 #container2-lateral{
+        width: 50%;
+        margin-top: 3rem;
+    }
+
+    section#container2 #conteudo-principal2 #container2-album img{
+        width: 90%;
+    }
+
+    section#container2 #conteudo-principal2 #container2-lateral h1{
+        color: #7858d8;
+        font-size: 5rem;
+        margin-bottom: 1.4rem;
+    }
+
+    section#container2 #conteudo-principal2 #container2-lateral h4{
+        color: #7858d8;
+        font-size: 3rem;
+        margin-bottom: 1.2rem;
+    }
+
+    section#container2 #conteudo-principal2 #container2-lateral p{
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+
+    section#container3{
+        width: 100%;
+        padding: 4rem;
+    }
+
+    section#container3 #conteudo-principal3{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#container3 #conteudo-principal3 #container3-conteudo h1{
+        color: #fff;
+        font-size: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    section#container3 #conteudo-principal3 #container3-conteudo h4{
+        color: #96ccd6;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    section#container3 #conteudo-principal3 #container3-conteudo p{
+        color: #fff;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    section#container3 #conteudo-principal3 #container3-album{
+        margin-left: 5rem;
+    }
+
+    section#container3 #conteudo-principal3 #container3-album img{
+        width: 45%;
+        margin-top: 3rem;
+    }
+
+    section#container3 #conteudo-principal3 #container3-album img.iphone1{
+        transform: translateX(-2rem);
+    }
+
+    footer#rodape{
+        background: black;
+        width: 100%;
+        color: #fff;
+        padding-bottom: 3rem;
+    }
+
+    footer#rodape #rodape-interno{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    footer#rodape #rodape-interno #conteudo-rodape img{
+        display: none;
+    }
+
+    footer#rodape #rodape-interno #conteudo-rodape{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+        font-size: 1.7rem;
+    }
+
+    footer#rodape #rodape-interno #conteudo-rodape .coluna h4{
+        color: rgb(134, 134, 134);
+        margin-bottom: 1.8rem;
+    }
+
+    footer#rodape #rodape-interno #conteudo-rodape .coluna p{
+        margin-bottom: 1rem;
+    }
+
+    footer#rodape #rodape-interno #redes-sociais span{
+        margin-left: 1rem;
+        font-size: 2.5rem;
+        border-radius: 50%;
+        padding: 1.2rem;
+        background: #38393e;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: inline-block;
+    }
+
+    footer#rodape #rodape-interno #redes-sociais span:hover{
+        transform: scale(1.1);
+        background: #fff;
+        color: black;
+    }
+
+    footer#rodape #rodape-interno #conteudo-rodape .coluna p:hover{
+        color: cyan;
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+}
